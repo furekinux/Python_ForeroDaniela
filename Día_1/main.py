@@ -56,7 +56,7 @@ texto2="Wumpus"
 if texto2=="Wumpus":
     print("Soy camper")
 else:
-    print("No soy campus :(")
+    print("No soy camper :(")
 
 ##Desarrollado por DANIELA FORERO BALLÉN - 1142714225
     
