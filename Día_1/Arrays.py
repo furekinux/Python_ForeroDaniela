@@ -1,2 +1,0 @@
-notas=[]
-from array import*
