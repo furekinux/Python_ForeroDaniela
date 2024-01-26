@@ -1,4 +1,5 @@
 ##Manejo de arreglos en python práctica
+##Menú restaurante y sus precios!
 print("Bienvenido al restaurante. Aquí está el menú de hoy:")
 print(" ")
 platos=["Lasagna","Pizza","Rizzoto"]
