@@ -9,6 +9,7 @@ def suma(num1,num2):
     return rta
 print("La suma de los dos números ingresados es: ",suma(num1,num2))
 
+
 ##Función con retorno y sin parámetros
 ##Esta función genera una respuesta al saludo del usuario ^^
 print(" ")
@@ -18,6 +19,7 @@ def saludo():
         answer=print("Adios :)")
     return answer
 (saludo())
+
 
 ##Función sin retorno y sin parámetros
 ##Esta función multiplica dos números ingresados por el usuario
@@ -29,7 +31,9 @@ Num1=int(input("Número uno: "))
 Num2=int(input("Número dos: "))
 multiplicar()
 
+
 ##Función sin retorno y con parámetros
+##Juego de pingpong
 print(" ")
 ans=str(input("¿Iniciar ping-pong? "))
 ans2=str
