@@ -1,7 +1,6 @@
 ##Manejo de arreglos en python práctica
 ##Menú restaurante y sus precios!
-print("Bienvenido al restaurante. Aquí está el menú de hoy:")
-print(" ")
+print("Bienvenido al restaurante. Aquí está el menú de hoy:\n")
 platos=["Lasagna","Pizza","Rizzoto"]
 for plato in platos:
     print(f"Opción: {plato}")
