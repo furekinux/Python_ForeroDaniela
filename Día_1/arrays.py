@@ -6,7 +6,7 @@ platos=["Lasagna","Pizza","Rizzoto"]
 for plato in platos:
     print(f"Opción: {plato}")
 print(" ")
-print("Y sus respectivos precios:")
+print("Y sus respectivos precios:\n")## \ Alt Gr + '
 precios=(["15000","60000","25000"])
 for precio,plato in zip(precios,platos):
     print(f"El pedido de {plato} cuesta {precio}")
