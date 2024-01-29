@@ -5,7 +5,7 @@ b=1##Iniciales
 d=1
 
 def genfibo():
-    while n>d+1: ##Mientras d es menor que c repetir:
+    while (n-1>d): ##Mientras d es menor que c repetir:
         a+b==a
         b+a==b
     print(a)
