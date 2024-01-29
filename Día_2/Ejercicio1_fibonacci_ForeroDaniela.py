@@ -16,7 +16,7 @@ print("Bienvenido usuario, por medio de este programa podrá generar la secuenci
 rta=str(input("¿Empezar?"))
 if rta=="Si":
   n=int(input("Ingrese la cantidad de pasos a generar: ")) ##El usuario ingresa la cantidad de numeros a generar
-  print(genfibo())
+  genfibo()
   print("¿Desea agregar más digitos?")
   rta=str(input("RTA: "))
   if rta=="Si":
