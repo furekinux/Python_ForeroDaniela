@@ -1,4 +1,4 @@
-
+##AAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHH
 n=(int(input()))
 def coins():
     if n>=1 and n<=1000:
