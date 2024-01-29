@@ -7,8 +7,8 @@ def play_game():
 
     while attempts_left > 0: ##Se repite hasta que el usuario se quede sin intentos
         user_guess = int(input("Ingresa un número: ")) ##El usuario ingresa un número 
-        if user_guess < number_to_guess - 5 or user_guess > number_to_guess + 5:
-            print("Tu número esta muy lejos.") ##Si el número del usuario es menor al num-5 o mayor al num+5 
+        if user_guess < number_to_guess - 5 or user_guess > number_to_guess + 5: ##Si el número del usuario es menor al num-5 o mayor al num+5 
+            print("Tu número esta muy lejos.")
         elif abs(user_guess - number_to_guess) <= 2:##Si su resta es mayor igual a 2
             print("Muy cerca")
         else:
@@ -22,4 +22,4 @@ def play_game():
     if attempts_left == 0 and user_guess != number_to_guess: ##Si el usuario se queda sin intentos=fin del juego 
         print(f"Fin del juego. El número correcto era: {number_to_guess}.")
 
-play_game()
+play_game()##Ejecuta la funciòn
