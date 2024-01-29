@@ -11,7 +11,6 @@ def genfibo():
     print(a)
     print(b)
     d=d+1
-    return Fibonacci
 
 print("Bienvenido usuario, por medio de este programa podrá generar la secuencia de fibonnaci")
 rta=str(input("¿Empezar?"))
