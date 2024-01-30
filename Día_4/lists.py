@@ -32,4 +32,13 @@ else:
         b[l]=dataA
         l=l+1
     print(b)
-    
+    x=1
+    y=2
+def couple():
+    (x,y)
+    if not x==y and x<y:
+        a=(x+y)/k
+        if a==int:
+            caseNum=caseNum+1
+        
+
