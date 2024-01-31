@@ -13,12 +13,14 @@ for case in range(T):
     n=0
     k=0
     Interg=list()
-    textoLista=text.split(" ")
-    numsLista=nums.split(" ")
-    n=int(textoLista[0])
-    k=int(textoLista[1])
+    textList=text.split(" ")
+    numsList=nums.split(" ")
+    n=int(textList[0])
+    k=int(textList[1])
     for p in range(n):
-        number=int(numsLista[p])
-        Interg.append(abs(number))
+        num=int(numsList[p])
+        Interg.append(abs(num))
     result=check(Interg,n,k)
     print("Case {}:{}".format(case+1,result))
+
+    ##Daniela Forero y Catalina Mulford :D
