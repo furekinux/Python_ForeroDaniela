@@ -1,15 +1,10 @@
 def pares(T_n,n,k):
     pairs=set()
-    contador=0
     for i in range(n):
         for j in range(i+1,n):
             if(T_n[i]+T_n[j])%k==0:
                 pairs.add((min(T_n[i],T_n[j]),max(T_n[i],T_n[j])))
-                contador=contador+1
-    print(len(pairs))
-    print(pairs)
-    print(contador)
-    return contador
+    return len(pairs)
 
 T=int(input())
 for case in range(T):
