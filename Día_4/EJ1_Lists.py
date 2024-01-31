@@ -20,15 +20,13 @@ def couple():
             else:
                 caseNum=caseNum+0
 def couples(b):
-    for i in range(0,len(b)-1,2):
+    for i in range(len(b)):
         (b[i],b[i+1])
         print(f"{b[i],b[i+1]}")
-        i+1
-        if i>n:
-           print("")
-           break
+        i=n-1
         
 ##FUNCIONES ARRIBA---^
+
 T=(int(input()))
 if 0>T>100:
      exit()
@@ -52,6 +50,9 @@ else:
     print(f"{T}\n{n} {k}")
     print(b)
     couples(b)
-    
+    exit()
+    caseNum=0
+    couple()
+    print(caseNum)
     print
 ##Hecho por: Daniela Forero y Catalina Mulford :D
