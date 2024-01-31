@@ -24,16 +24,18 @@ else:
         n=int(a[0])
         k=int(a[1])
     nkCheck
-    print(f"{T}\n{n} {k}")
     aaa=input("")
     b=[*aaa]
     for l in range(n):
         dataA=int(b[l])
         b[l]=dataA
         l=l+1
+    clear()
+    print(f"{T}\n{n} {k}")
     print(b)
-    x=1
-    y=2
+
+x=1
+y=2
 def couple():
     (x,y)
     if not x==y and x<y:
@@ -41,4 +43,4 @@ def couple():
         if a==int:
             caseNum=caseNum+1
         
-
+##Hecho por: Daniela Forero y Catalina Mulford :D
