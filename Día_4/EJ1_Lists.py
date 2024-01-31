@@ -3,6 +3,8 @@ def nkCheck():
         exit()
     if not 0<k<501:
         exit()
+def couples(b):
+    return[(b[i],b[i+1]) for i in range(0,len(b),2)]
 
 from os import system,name
 def clear():
@@ -33,14 +35,14 @@ else:
     clear()
     print(f"{T}\n{n} {k}")
     print(b)
-
-x=1
-y=2
-def couple():
-    (x,y)
-    if not x==y and x<y:
-        a=(x+y)/k
-        if a==int:
-            caseNum=caseNum+1
+    exit()
+    x=1
+    y=2
+    def couple():
+        (x,y)
+        if not x==y and x<y:
+            a=(x+y)/k
+            if a==int:
+                caseNum=caseNum+1
         
 ##Hecho por: Daniela Forero y Catalina Mulford :D
