@@ -1,11 +1,3 @@
-def nkCheck():
-    if not 1<n<100001:
-        exit()
-    if not 0<k<501:
-        exit()
-def couples(b):
-    return[(b[i],b[i+1]) for i in range(0,len(b),2)]
-
 from os import system,name
 def clear():
     if name=="nt":
@@ -13,6 +5,30 @@ def clear():
     else:
         _=system("clear")
 
+def nkCheck():
+    if not 1<n<100001:
+        exit()
+    if not 0<k<501:
+        exit()
+
+def couple():
+        (b[i],b[i])
+        if not b[i]==b[i+1] and b[i+1]<b[i+1]:
+            a=(b[i]+b[i])/k
+            if a==int:
+                caseNum=caseNum+1
+            else:
+                caseNum=caseNum+0
+def couples(b):
+    for i in range(0,len(b)-1,2):
+        (b[i],b[i+1])
+        print(f"{b[i],b[i+1]}")
+        i+1
+        if i>n:
+           print("")
+           break
+        
+##FUNCIONES ARRIBA---^
 T=(int(input()))
 if 0>T>100:
      exit()
@@ -35,14 +51,7 @@ else:
     clear()
     print(f"{T}\n{n} {k}")
     print(b)
-    exit()
-    x=1
-    y=2
-    def couple():
-        (x,y)
-        if not x==y and x<y:
-            a=(x+y)/k
-            if a==int:
-                caseNum=caseNum+1
-        
+    couples(b)
+    
+    print
 ##Hecho por: Daniela Forero y Catalina Mulford :D
