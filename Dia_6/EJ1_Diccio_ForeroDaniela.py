@@ -27,7 +27,7 @@ else:
             precio=(b[2])
             producto=a[2]
         else:
-            exit()
+            print("Este producto no està disponible.")
 cantidad=int(rtaList[1])
 print(f"El elemento seleccionado es: {producto}.")
-print(PrecioFinal())
+print(f"El precio a pagar es: ${PrecioFinal()}")
