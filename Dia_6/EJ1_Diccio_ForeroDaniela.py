@@ -8,26 +8,32 @@ def PrecioFinal():
     return PF
 
 Diccio={"Productos":("Alimento Perros 25Kg(AD)","Alimento Gatos 20Kg(AC)","Alimento Peces Tarro 0,1Kg(AF)"),"Precios":(25000,24500,52000)}
+
 a=Diccio["Productos"]
 b=Diccio["Precios"]
 print("Bienvenido usuario, ¿Que producto busca para su mascota?")
-print(f"Productos disponibles: {a}\nAgregue la cantidad despues del elemento")
-rta=input()
+print(f"Productos disponibles: {a}")
+rta=input("\nAgregue la cantidad despues del elemento: ")
 rtaList=rta.split(" ")
 producto=str(rtaList[0])
+cantidad=int(rtaList[1])
+
+while producto!="AD" and producto!="AC" and producto!="AF":
+    print("Este producto no està disponible.")
+    producto=input("Volver a intentar producto: ")
+
 if producto=="AD":
     precio=(b[0])
     producto=a[0]
-else:
-    if producto=="AC":
-        precio=(b[1])
-        producto=a[1]
-    else:
-        if producto=="AF":
-            precio=(b[2])
-            producto=a[2]
-        else:
-            print("Este producto no està disponible.")
-cantidad=int(rtaList[1])
+elif producto=="AC":
+    precio=(b[1])
+    producto=a[1]
+elif producto=="AF":
+    precio=(b[2])
+    producto=a[2]
+    
 print(f"El elemento seleccionado es: {producto}.")
-print(f"El precio a pagar es: ${PrecioFinal()}")
+
+print(f"\nEl precio a pagar es: ${PrecioFinal()}")
+
+##Hecho por Daniela Forero Ballén 1142714225*
