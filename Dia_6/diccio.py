@@ -20,3 +20,5 @@ for llave,valor in Diccio.items():
 
 print("··························")
 ##CLEAR() limpia diccio
+
+## BORRA LLAVES --> Diccio.pop("ITEM")
