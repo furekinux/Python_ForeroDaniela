@@ -1,11 +1,22 @@
-lista={'Nombre':'Ella','Edad':20,'Barrio':'Zapamanga'}
-print(lista)
-print(type(lista))
-print(lista['Nombre'])
-lista['Nombre']="Jhon"##CAMBIA NOMBRE O ITEM
-print(lista)
-print(type(lista))
-print(lista['Nombre'])
+Diccio={'Nombre':'Ella','Edad':20,'Barrio':'Zapamanga'}
+print(Diccio)
+print(type(Diccio))
+print(Diccio['Nombre'])
+Diccio['Nombre']="Jhon"##CAMBIA NOMBRE O ITEM
+print(Diccio)
+print(type(Diccio))
+print(Diccio['Nombre'])
 
-for i in lista:
+##recorrer Diccio
+for i in Diccio:
     print(i)
+
+##Valor * valor :D
+for valor in Diccio:
+    print(Diccio[valor])
+
+for llave,valor in Diccio.items():
+    print(llave,valor)
+
+print("··························")
+##CLEAR() limpia diccio
