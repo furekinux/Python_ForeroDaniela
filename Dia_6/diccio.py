@@ -21,4 +21,10 @@ for llave,valor in Diccio.items():
 print("··························")
 ##CLEAR() limpia diccio
 
-## BORRA LLAVES --> Diccio.pop("ITEM")
+## BORRA LLAVES --> Diccio.pop("LLAVE")
+## BORRA ITEMS --> Diccio.popitem("ITEM")
+
+##CRUZAR DICCIOS (REEMPLAZA LAS LLAVES)
+Diccio2={'Edad':23,'Barrio':'Ruitoque'}
+Diccio.update(Diccio2)
+print(Diccio)
