@@ -9,3 +9,9 @@ def couples(b,n):
         (b[i],b[i+1])
         print(f"{b[i],b[i+1]}")
         i=n-1
+
+def clear(name,system):
+    if name=="nt":
+        _=system("cls")
+    else:
+        _=system("clear")

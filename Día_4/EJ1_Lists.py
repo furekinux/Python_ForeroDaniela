@@ -1,12 +1,6 @@
 from os import system,name
 import Modu4 as uwu
 
-def clear():
-    if name=="nt":
-        _=system("cls")
-    else:
-        _=system("clear")
-
         
 ##FUNCIONES ARRIBA---^
 
@@ -29,7 +23,7 @@ else:
         dataA=int(b[l])
         b[l]=dataA
         l=l+1
-    clear()
+    uwu.clear(name,system)
     print(f"{T}\n{n} {k}")
     print(b)
     uwu.couples(b,n)
