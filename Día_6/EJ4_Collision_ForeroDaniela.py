@@ -16,9 +16,6 @@ u=Coordinates_a
 x=int(u[0])
 y=int(u[1])
 r=int(u[2])
-a_Cor.append(x)
-a_Cor.append(y)
-a_Cor.append(r)
 a_Cor=(x,y,r)
 CorListA=[a_Cor]
 radiusA=r
