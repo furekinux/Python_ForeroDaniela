@@ -1,10 +1,4 @@
-def check(Interg,n,k):
-    couples=set()
-    for i in range(n):
-        for j in range(i+1,n):
-            if(Interg[i]+Interg[j])%k==0:
-                couples.add((min(Interg[i],Interg[j]),max(Interg[i],Interg[j])))
-    return len(couples)
+import Modu5 as Name
 
 T=int(input())
 for case in range(T):
@@ -20,7 +14,7 @@ for case in range(T):
     for p in range(n):
         num=int(numsList[p])
         Interg.append(abs(num))
-    result=check(Interg,n,k)
+    result=Name.check(Interg,n,k)
     print("Case {}:{}".format(case+1,result))
 
     ##Daniela Forero y Catalina Mulford :D

@@ -1,29 +1,12 @@
 from os import system,name
+import Modu4 as uwu
+
 def clear():
     if name=="nt":
         _=system("cls")
     else:
         _=system("clear")
 
-def nkCheck():
-    if not 1<n<100001:
-        exit()
-    if not 0<k<501:
-        exit()
-
-def couple():
-        (b[i],b[i])
-        if not b[i]==b[i+1] and b[i+1]<b[i+1]:
-            a=(b[i]+b[i])/k
-            if a==int:
-                caseNum=caseNum+1
-            else:
-                caseNum=caseNum+0
-def couples(b):
-    for i in range(len(b)):
-        (b[i],b[i+1])
-        print(f"{b[i],b[i+1]}")
-        i=n-1
         
 ##FUNCIONES ARRIBA---^
 
@@ -39,7 +22,7 @@ else:
         i=i+1
         n=int(a[0])
         k=int(a[1])
-    nkCheck
+    uwu.nkCheck(n,k)
     aaa=input("")
     b=[*aaa]
     for l in range(n):
@@ -49,10 +32,6 @@ else:
     clear()
     print(f"{T}\n{n} {k}")
     print(b)
-    couples(b)
+    uwu.couples(b,n)
     exit()
-    caseNum=0
-    couple()
-    print(caseNum)
-    print
 ##Hecho por: Daniela Forero y Catalina Mulford :D
