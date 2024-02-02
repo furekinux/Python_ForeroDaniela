@@ -18,3 +18,7 @@ def pingpong(ans,ans2):
             print("Gracias por jugar :)")
         else:
             print("Game over :(")
+
+def ansage(numeroFinal):
+    print(" ")
+    print("Your age is: ",numeroFinal,"!")

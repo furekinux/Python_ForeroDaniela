@@ -1,7 +1,7 @@
 ##---------------------------------------------
 ##--------------- Ejercicio #1 ----------------
 ##---------------------------------------------
-
+import Modu1 as XD
 # Impresión en consola
 print("Hello, world!^w^")
 
@@ -35,9 +35,9 @@ print(" ")
 #--------Entradas * parte del usuario con/sin def de tipo de dato primitivo----------
 entradausuarioNumero=int(input("Enter your age:"))
 #o
+##
 numeroFinal=int(entradausuarioNumero)
-print(" ")
-print("Your age is: ",entradausuarioNumero,"!")
+XD.ansage(numeroFinal)
 
 #----- Ciclos :3 -----
 
