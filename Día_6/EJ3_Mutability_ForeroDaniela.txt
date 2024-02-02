@@ -1,0 +1,16 @@
+Strings: **INMUTABLE**
+Es de tipo inmutable, el string siempre representara el mismo string.
+Ademas de no poder cambiarlos despues de su creacion.
+
+Lists: **MUTABLE**
+Pueden ser modificadas, sus elementos reemplazador individualmente y se puede modificar
+su orden despues de su creacion.
+
+Tuples: **INMUTABLE**
+No permite la modificacion, adicion o eliminar elementos dentro de la tupla.
+
+Dictionaries: **MUTABLE**
+Se pueden cambiar sus llaves, sus elementos, agregar y borrar objetos de las mismas.
+
+Sets: **MUTABLE**
+Despues de su creacion, se pueden modificar elementos, agregar y eliminar.
