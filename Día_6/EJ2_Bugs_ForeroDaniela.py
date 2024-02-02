@@ -1,32 +1,15 @@
-
-
-def negate(num): ##CORRECCIÓN CÓDIGO:
-    if num>0:
-        a=num*-1
-        return a
-    else:
-        b=num*-1
-        return b
-
-def large_num(num):
-    if (num>10000):
-        print("num is big: ",num)
-    elif (num<-10000):
-        print("num is small: ",num)
-    else:
-        print("num isn't big: ",num)
-
+import Modu6 as Wi
 
 num=int(input())
 
-neg_num=negate(num)
+neg_num=Wi.negate(num)
 
 if num<0:
     print("num:",num,"pos_num:",neg_num)
 else:
     print("num:",num,"neg_num:",neg_num)
 
-large_num(num)
+Wi.large_num(num)
 
 
 ##Errores del código enunciados abajo:

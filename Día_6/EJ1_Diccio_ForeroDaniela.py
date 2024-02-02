@@ -3,9 +3,7 @@
 #Y LA CANTIDAD. AL FINALIZAR MOSTRAR EN LA CONSOLA EL PRECIO TOTAL. SI
 #EL PRODUCTO NO ESTA DEBE MOSTRAR UN MENSAJE INFORMANDO SOBRE ELLO
   
-def PrecioFinal():
-    PF=cantidad*precio
-    return PF
+import Modu6 as Hi
 
 Diccio={"Productos":("Alimento Perros 25Kg(AD)","Alimento Gatos 20Kg(AC)","Alimento Peces Tarro 0,1Kg(AF)"),"Precios":(25000,24500,52000)}
 
@@ -34,6 +32,6 @@ elif producto=="AF":
     
 print(f"El elemento seleccionado es: {producto}.")
 
-print(f"\nEl precio a pagar es: ${PrecioFinal()}")
+print(f"\nEl precio a pagar es: ${Hi.PrecioFinal(cantidad,precio)}")
 
 ##Hecho por Daniela Forero Ballén 1142714225*
