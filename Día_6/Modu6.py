@@ -18,3 +18,9 @@ def large_num(num):
         print("num is small: ",num)
     else:
         print("num isn't big: ",num)
+
+def ballcollide(m,rad_sum):
+    if m<=rad_sum:
+        return True
+    else:
+        return False

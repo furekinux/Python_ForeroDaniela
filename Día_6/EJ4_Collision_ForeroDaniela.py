@@ -1,8 +1,4 @@
-def ballcollide():
-    if m<=rad_sum:
-        return True
-    else:
-        return False
+import Modu6 as uwu
 
 DiccioA={}
 DiccioB={}
@@ -39,5 +35,5 @@ print("The ball B's coordinates and radius are: ",b_Cor)
 
 m=int(input("\nHow long is the distance between them: "))
 print("\nColliding?")
-print(ballcollide())
+print(uwu.ballcollide(m,rad_sum))
 ##Hecho por Daniela Forero 1142714227 ;-;
