@@ -1,4 +1,4 @@
-import Modu5 as Name
+import Día_5.MODULES.Modu5 as Name
 
 T=int(input())
 for case in range(T):

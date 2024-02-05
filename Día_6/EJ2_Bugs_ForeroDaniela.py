@@ -1,4 +1,4 @@
-import Modu6 as Wi
+import Día_6.MODULES.Modu6 as Wi
 
 num=int(input())
 

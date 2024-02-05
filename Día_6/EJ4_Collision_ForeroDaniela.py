@@ -1,4 +1,4 @@
-import Modu6 as uwu
+import Día_6.MODULES.Modu6 as uwu
 
 DiccioA={}
 DiccioB={}
