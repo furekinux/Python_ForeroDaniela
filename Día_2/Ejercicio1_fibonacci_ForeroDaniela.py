@@ -1,5 +1,5 @@
 ##Fibonacci
-import Modu2 as XD
+import Día_2.MODULES.Modu2 as XD
 a=0##Valotes
 b=1##Iniciales
 d=1

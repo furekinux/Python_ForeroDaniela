@@ -1,5 +1,5 @@
 from os import system,name
-import Modu4 as uwu
+import Día_4.MODULES.Modu4 as uwu
 
         
 ##FUNCIONES ARRIBA---^

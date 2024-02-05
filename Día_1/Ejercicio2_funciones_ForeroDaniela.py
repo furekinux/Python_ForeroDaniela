@@ -1,6 +1,6 @@
 ##---------------------Funciones-----------------------
 
-import Modu1 as XD
+import Día_1.MODULES.Modu1 as XD
 
 ##Función con retorno y parámetros
 ##Esta función genera la suma de 2 números ingresados por el usuario :D

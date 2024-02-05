@@ -1,5 +1,5 @@
 ##AAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHH
-import Modu3 as Holi
+import Día_3.MODULES.Modu3 as Holi
 
 n=(int(input()))
 Holi.coins2(n)

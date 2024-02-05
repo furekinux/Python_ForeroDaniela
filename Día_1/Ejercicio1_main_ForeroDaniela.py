@@ -1,7 +1,7 @@
 ##---------------------------------------------
 ##--------------- Ejercicio #1 ----------------
 ##---------------------------------------------
-import Modu1 as XD
+import Día_1.MODULES.Modu1 as XD
 # Impresión en consola
 print("Hello, world!^w^")
 
