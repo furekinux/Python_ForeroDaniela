@@ -1,0 +1,12 @@
+{ 
+	"tamano": "mediana",
+	"precio": 15.67,
+	"toppings": ["champinones", "pepperoni", "albahaca"],
+	"queso_extra": false,
+	"delivery": true,
+	"cliente": {
+		"nombre": "Dani Forero",
+		"telefono": null,
+		"correo": "dani.didi.fb@gmail.com"
+	}
+}

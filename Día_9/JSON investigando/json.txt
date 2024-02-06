@@ -1,0 +1,19 @@
+°°°°°°°°°°°°°°°°°JSON°°°°°°°°°°°°°°°°°°°°
+= J ava - S cript - O bject - N otation =
+
+No deja agregar comentarios a json :c
+agregar: "clave": <valor>
+
+(Revisar archivo de la misma carpeta(Ejemplo de google ;-;))
+
+Estructura:
+
+{
+
+    "clave": <valor> ,
+    "clave": {
+        "clave": <valor> ,
+        "clave": <valor>
+    }
+
+}
