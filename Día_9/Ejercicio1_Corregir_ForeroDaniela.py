@@ -5,9 +5,7 @@ def calcular_definitiva(lista):
     sumatoria=0
     for i in range(len(lista)):
         sumatoria=sumatoria+lista[i]
-
     return sumatoria
-
 def notamayo(lista2):
     if notaMayor==lista[2]:
         print("Tu nota mayor es:",notaMayor," = ",((notaMayor*100)/40))
@@ -15,7 +13,6 @@ def notamayo(lista2):
         print("Tu nota mayor es:",notaMayor," = ",((notaMayor*100)/30))
     else:
         print("No reconoce :(")
-    
 for i in range(5):
     print("\nEstudiante#",i+1)
     lista=[]
@@ -32,7 +29,6 @@ for i in range(5):
             print(numerito)
             definitiva=definitiva+numerito
             lista.append(numerito)
-    
     for i in range(2): ##NOTA MAYOOOOOOOOOOOOOOOOOOOOOOOR :D!!!!
         if lista[i]>lista[i+1]:
            notaMayor=lista[i]
@@ -42,7 +38,6 @@ for i in range(5):
     lista2=lista
     print(lista)
     notamayo(lista2)
-    
     definitiva=calcular_definitiva(lista)
     print("Tu definitiva es:",definitiva)
     if(definitiva<2):
@@ -51,6 +46,4 @@ for i in range(5):
         print("Pues... todo bien...recupera") ##PASA (?)
     elif(definitiva>4.5):
         print("Excelente estudiante! Sos ejemplar") ##PASA
-    print(lista)
-
-    
+    print(lista)   
