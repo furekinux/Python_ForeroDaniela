@@ -3,11 +3,9 @@
 
 No deja agregar comentarios a json :c
 agregar: "clave": <valor>
-
 (Revisar archivo de la misma carpeta(Ejemplo de google ;-;))
 
 Estructura:
-
 {
 
     "clave": <valor> ,
@@ -17,3 +15,10 @@ Estructura:
     }
 
 }
+
+Importar:
+json->python
+: json.load()
+
+json<-python
+: json.dumps()
