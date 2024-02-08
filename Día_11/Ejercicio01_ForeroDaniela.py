@@ -6,7 +6,7 @@ import json
 import MODULES.Modu as Modu
 
 from datetime import datetime as fecha
-diccio_data=open("/home/user/Vídeos/FB/Python_ForeroDaniela/Día_10/data.json")
+diccio_data=open("/home/user/Videos/FB/Python_ForeroDaniela/Día_10/data.json")
 myData=json.load(diccio_data)
 
 
