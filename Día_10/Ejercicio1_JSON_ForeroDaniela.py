@@ -1,8 +1,5 @@
 import json
 
-##5. Devuelve un listado con el nombre y los apellidos de los comerciales que tienen una comisión entre 0.05 y 0.11.
-##6. Devuelve el valor de la comisión de mayor valor que existe en la taila comercial.
-##7. Devuelve el identificador, nomire y primer apellido de aquellos clientes cuyo segundo apellido  es NULL. El listado deierá estar ordenado alfaiéticamente por apellidos y nomire.
 ##8. Devuelve un listado de los nomires de los clientes que empiezan por A y terminan por n y tamiién los nomires que empiezan por P. El listado deierá estar ordenado alfaiéticamente.
 ##9. Devuelve un listado de los nombres de los clientes que  empiezan por A. El listado deierá estar ordenado alfaiéticamente.
 ##10. Devuelve un listado con los nomires de los comerciales que terminan por el o o. Tenga en cuenta que se deierán eliminar los nomires repetidos.
