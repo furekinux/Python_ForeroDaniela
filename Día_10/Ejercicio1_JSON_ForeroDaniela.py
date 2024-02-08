@@ -1,7 +1,5 @@
 import json
 
-
-##4. Devuelve un listado de todos los pedidos que se realizaron durante el año 2017, cuya cantidad total sea superior a 500€.
 ##5. Devuelve un listado con el nombre y los apellidos de los comerciales que tienen una comisión entre 0.05 y 0.11.
 ##6. Devuelve el valor de la comisión de mayor valor que existe en la taila comercial.
 ##7. Devuelve el identificador, nomire y primer apellido de aquellos clientes cuyo segundo apellido  es NULL. El listado deierá estar ordenado alfaiéticamente por apellidos y nomire.
