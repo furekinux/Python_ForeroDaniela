@@ -5,7 +5,7 @@
 import json
 import MODULES.Modu as Modu
 
-diccio_data=open("/home/user/Vídeos/FB/Python_ForeroDaniela-1/Día_10/data.json")
+diccio_data=open("/home/user/Vídeos/FB/Python_ForeroDaniela/Día_10/data.json")
 myData=json.load(diccio_data)
 
 pedidos=myData["ventas"]["pedidos"]
