@@ -11,10 +11,10 @@ import json
 ##9. Devuelve un listado de los nombres de los clientes que  empiezan por A. El listado deierá estar ordenado alfaiéticamente.
 ##10. Devuelve un listado con los nomires de los comerciales que terminan por el o o. Tenga en cuenta que se deierán eliminar los nomires repetidos.
 
+##INFO GENERAL
 def infopedido(IDs,ID_client,totales,fechas,ID_commer):
     L=f"\nPEDIDO [ID: {IDs}] [Cliente: {ID_client}]\n Total: {totales}| Fecha: {fechas}| ID Comercial: {ID_commer}"
     return L
-
 def info():
     for i in range(len(myData["ventas"]["pedidos"])):
         a=pedidos[i]
@@ -37,6 +37,31 @@ def info():
             pass
         i+i+1
 
+##POR AÑO
+def poraño():
+    if orden==2015:
+        print("\n-----PEDIDOS 2015-----\n")
+        for j in range(len(lista_2015)):
+            print(lista_2015[j],"\n")
+            j=j+1
+    elif orden==2016:
+        print("\n-----PEDIDOS 2016-----\n")
+        for j in range(len(lista_2016)):
+            print(lista_2016[j],"\n")
+            j=j+1
+    elif orden==2017:
+        print("\n-----PEDIDOS 2017-----\n")
+        for j in range(len(lista_2017)):
+            print(lista_2017[j],"\n")
+            j=j+1
+    elif orden==2019:
+        print("\n-----PEDIDOS 2019-----\n")
+        for j in range(len(lista_2019)):
+            print(lista_2019[j],"\n")
+            j=j+1
+    else:
+        print("\nEste año no está disponible...\n")
+        pass
 
 diccio_data=open("data.json")
 myData=json.load(diccio_data)
@@ -47,42 +72,45 @@ lista_2019=[]
 pedidos=myData["ventas"]["pedidos"]
 IDs=myData["ventas"]["pedidos"]
 orden=0
+
 while orden!="stop":
     info()
     orden=str(input("\n------Qué desea revisar?------\n   -CLIENTES-\n   -PEDIDOS-\n\n"))
     
+    ##INFO CLIENTES:
     if orden=="CLIENTES" or orden=="clientes":
         print("\n\n-----CLIENTES-----\n   -Información generales-\n   -Solo nombres y apellidos-\n   -Pedidos por año-\n")
         for i in range(len(myData["ventas"]["pedidos"])):
-                a=pedidos[i]
-                IDs=a["id"]
-                totales=a["total"]
-                fechas=a["fecha"]
-                ID_client=a["id_cliente"]
-                ID_commer=a["id_comercial"]
-                ID_client=a["id_cliente"]
-                lista_fecha=list(map(int,fechas.split("-")))
-                if (lista_fecha[0]==2015):
-                    print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
-                    lista_2015.append(a)
-                elif (lista_fecha[0]==2016):
-                    print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
-                    lista_2016.append(a)
-                elif (lista_fecha[0]==2017):
-                    print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
-                    lista_2017.append(a)
-                elif (lista_fecha[0]==2019):
-                    print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
-                    lista_2019.append(a)
-                else:
-                    pass
-                i+i+1
-    
-    
-    if orden=="PEDIDOS" or orden=="pedidos":                                                ##( ^^ )/
-        print("\n\n-----PEDIDOS-----\n   -Pedidos generales-\n   -Pedidos de mayor valor-\n   -Pedidos por año-\n")  ##(    )
+            a=pedidos[i]
+            IDs=a["id"]
+            totales=a["total"]
+            fechas=a["fecha"]
+            ID_client=a["id_cliente"]
+            ID_commer=a["id_comercial"]
+            ID_client=a["id_cliente"]
+            lista_fecha=list(map(int,fechas.split("-")))
+            if (lista_fecha[0]==2015):
+                print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
+                lista_2015.append(a)
+            elif (lista_fecha[0]==2016):
+                print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
+                lista_2016.append(a)
+            elif (lista_fecha[0]==2017):
+                print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
+                lista_2017.append(a)
+            elif (lista_fecha[0]==2019):
+                print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
+                lista_2019.append(a)
+            else:
+                pass
+            i+i+1
+
+    ##INFO PEDIDOS:                                                                                                   ##/\/\
+    if orden=="PEDIDOS" or orden=="pedidos":                                                                         ##(=^^=) /
+        print("\n\n-----PEDIDOS-----\n   -Pedidos generales-\n   -Pedidos de mayor valor-\n   -Pedidos por año-\n")  ##(u  u)/
         orden=str(input())
         
+        ##TODOS LOS PEDIDOS EN GENERAL:
         if orden=="generales" or orden=="gen":
             for i in range(len(myData["ventas"]["pedidos"])):
                 a=pedidos[i]
@@ -112,13 +140,12 @@ while orden!="stop":
         elif orden=="mayor valor" or orden=="mayor" or orden=="may":
             print("WIP")
         
+        ##PEDIDOS POR AÑO:
         elif orden=="por año" or orden=="año":
             print("\n\n-----PEDIDOS POR AÑO-----\n   -2015-\n   -2016-\n   -2017-\n   -2019-\n")
             orden=int(input())
-            if orden==2015:
-                print("\n-----PEDIDOS 2015-----")
-                for j in range(len(lista_2015)):
-                    print(lista_2015[j],"\n")
-                    j=j+1
+            info()
+            poraño()
+        
     elif orden=="otro":
         print("wiiii")
