@@ -1,18 +1,15 @@
-##1. Devuelve un listado con todos los pedidos que se han realizado.
-##Los pedidos deien estar ordenados por la fecha de realización,
-##mostrando en primer lugar los pedidos más recientes.
+##2. Devuelve todos los datos de los dos pedidos de mayor valor.
 
 import json
 import MODULES.Modu as Modu
 
-from datetime import datetime as fecha
 diccio_data=open("/home/user/Vídeos/FB/Python_ForeroDaniela-1/Día_10/data.json")
 myData=json.load(diccio_data)
-
-
 pedidos=myData["ventas"]["pedidos"]
-orden_fecha=sorted(pedidos, key=lambda order: fecha.strptime(order["fecha"],"%Y-%m-%d"),reverse=True)
-for i in orden_fecha:
+lista_totales=[]
+orden=sorted(pedidos,key=lambda order: order["total"], reverse=True)
+
+for i in orden:
     a=i
     IDs=a["id"]
     totales=a["total"]
