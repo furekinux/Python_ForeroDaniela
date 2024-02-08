@@ -69,6 +69,7 @@ lista_2015=[]
 lista_2016=[]
 lista_2017=[]
 lista_2019=[]
+lista_totales=[]
 pedidos=myData["ventas"]["pedidos"]
 IDs=myData["ventas"]["pedidos"]
 orden=0
@@ -81,6 +82,7 @@ while orden!="stop":
     if orden=="CLIENTES" or orden=="clientes":
         print("\n\n-----CLIENTES-----\n   -Información generales-\n   -Solo nombres y apellidos-\n   -Pedidos por año-\n")
         for i in range(len(myData["ventas"]["pedidos"])):
+            
             a=pedidos[i]
             IDs=a["id"]
             totales=a["total"]
@@ -88,7 +90,9 @@ while orden!="stop":
             ID_client=a["id_cliente"]
             ID_commer=a["id_comercial"]
             ID_client=a["id_cliente"]
+            lista_totales.append(totales)
             lista_fecha=list(map(int,fechas.split("-")))
+
             if (lista_fecha[0]==2015):
                 print(infopedido(IDs,ID_client,totales,fechas,ID_commer))
                 lista_2015.append(a)
@@ -111,7 +115,7 @@ while orden!="stop":
         orden=str(input())
         
         ##TODOS LOS PEDIDOS EN GENERAL:
-        if orden=="generales" or orden=="gen":
+        if orden=="generales" or orden=="gen": ##POR GENERAL
             for i in range(len(myData["ventas"]["pedidos"])):
                 a=pedidos[i]
                 IDs=a["id"]
@@ -137,11 +141,14 @@ while orden!="stop":
                     pass
                 i+i+1
         
-        elif orden=="mayor valor" or orden=="mayor" or orden=="may":
-            print("WIP")
+        ##PEDIDOS POR MAYOR VALOR:
+        elif orden=="mayor valor" or orden=="mayor" or orden=="may": ##POR VALOR MAYOR
+            print("\n\n--PEDIDOS POR VALOR MAYOR--\n")    
+            for i in range(len(lista_totales)):
+                print(lista_totales)    
         
         ##PEDIDOS POR AÑO:
-        elif orden=="por año" or orden=="año":
+        elif orden=="por año" or orden=="año": ##POR AÑO
             print("\n\n-----PEDIDOS POR AÑO-----\n   -2015-\n   -2016-\n   -2017-\n   -2019-\n")
             orden=int(input())
             info()
