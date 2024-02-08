@@ -15,10 +15,6 @@ for i in range(len(pedidos)):
     b=clientes_info[j]
     IDs=a["id"]
     IDc=b["id"]
-    totales=a["total"]
-    fechas=a["fecha"]
-    ID_client=a["id_cliente"]
-    ID_commer=a["id_comercial"]
     ID_client=a["id_cliente"]
     if ID_client==IDc:
         print(f"[ID CLIENTE: {ID_client}]\n{pedidos[i]}\n\n[ID CLIENTE: {IDc}]\n{clientes_info[i]}\n")
@@ -26,5 +22,3 @@ for i in range(len(pedidos)):
     else:
         j=j+1
         pass
-
-
