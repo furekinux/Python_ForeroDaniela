@@ -5,13 +5,22 @@ import json
 import MODULES.Modu as Modu
 from datetime import datetime as fecha
 
-diccio_data=open("/home/user/Videos/FB/Python_ForeroDaniela/Día_10/data.json")
+diccio_data=open("/home/user/Vídeos/FB/Python_ForeroDaniela/Día_10/data.json")
 myData=json.load(diccio_data)
 pedidos=myData["ventas"]["pedidos"]
 
 lista_2017=[]
+ped_list=[]
 for i in range(len(pedidos)):
-    ped=fecha.strptime(pedidos["fecha"],"%Y-%m-%d")
-
-    if "%Y"==2017:
-        lista_2017.append(ped)
+    a=pedidos[i]
+    IDs=a["id"]
+    totales=a["total"]
+    fechas=a["fecha"]
+    ID_client=a["id_cliente"]
+    ID_commer=a["id_comercial"]
+    ID_client=a["id_cliente"]
+    ped_list=a["fecha"].split("-")
+    if ped_list[0]=="2017" and a["total"]>500:
+        print(Modu.infopedido(IDs,ID_client,totales,fechas,ID_commer))
+    else:
+        pass
